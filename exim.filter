@@ -69,6 +69,7 @@ if
   or $header_from: contains "@mail.fundwisecapital.net"
   or $header_from: contains "@shadesofgreen.org"
   or $header_from: contains "mohammed.ail63@"
+  or $header_from: contains "@irvingconsult.com"
   or $header_subject: contains "Your Prostate Is the Size Of A Lemon"
 then
   if error_message then save "/dev/null" 660 else fail "Your message has been blocked due to anti-spam policies configured by the server administrator." endif
