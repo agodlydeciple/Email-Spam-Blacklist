@@ -82,3 +82,9 @@ if
 then
   if error_message then save "/dev/null" 660 else fail "Your message has been blocked due to anti-spam policies configured by the server administrator." endif
 endif
+
+if 
+  $header_subject: contains "YOUR DEVICE AND EMAIL HAS BEEN COMPROMISED"
+then
+  seen finish
+endif
