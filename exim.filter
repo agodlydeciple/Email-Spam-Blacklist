@@ -79,6 +79,7 @@ if
   or $header_from: contains "JennyBlue@"
   or $header_subject: contains "Your Prostate Is the Size Of A Lemon"
   or $header_subject: contains "Date For You"
+  or $header_subject: contains "Private link"
 then
   if error_message then save "/dev/null" 660 else fail "Your message has been blocked due to anti-spam policies configured by the server administrator." endif
 endif
