@@ -99,6 +99,7 @@ endif
 if 
   $header_subject: contains "YOUR DEVICE AND EMAIL HAS BEEN COMPROMISED"
   or $header_subject: contains "I RECORDED YOU!"
+  or $message_body: contains "I am a hacker who" and not error_message
 then
   seen finish
 endif
